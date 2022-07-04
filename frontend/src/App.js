@@ -3,8 +3,8 @@ function App() {
 		<div>
 			<header className='App-header'>
 				<a href='/'>electro</a>
-				<main>list products</main>
 			</header>
+			<main>list products</main>
 		</div>
 	);
 }
