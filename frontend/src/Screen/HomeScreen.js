@@ -1,13 +1,12 @@
 import { useEffect, useReducer } from 'react';
-
 import axios from 'axios';
 import logger from 'use-reducer-logger';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Product from './../component/Product';
-import { Helmet } from 'react-helmet-async';
-import LoadingBox from '../component/LoadingBox';
-import MessageBox from './../component/MessageBox';
+import Product from '../components/Product';
+// import { Helmet } from 'react-helmet-async';
+import LoadingBox from '../components/LoadingBox';
+import MessageBox from '.././components/MessageBox';
 
 const reducer = (state, action) => {
 	switch (action.type) {
@@ -45,9 +44,8 @@ function HomeScreen() {
 	}, []);
 	return (
 		<div>
-			<Helmet>
-				<title>Electronics</title>
-			</Helmet>
+			<title>Electronics</title>
+
 			<h1>featured products</h1>
 			<div className='products'>
 				{loading ? (
