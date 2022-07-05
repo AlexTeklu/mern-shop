@@ -1,6 +1,7 @@
 const data = {
 	products: [
 		{
+			_id: '1',
 			name: 'Smart phones',
 			slug: 'galaxy-smart-phones',
 			catagory: 'phones',
@@ -13,6 +14,7 @@ const data = {
 			descriptioin: 'hight quality HD camera',
 		},
 		{
+			_id: '2',
 			name: 'Smart phones',
 			slug: 'tv-smart',
 			catagory: 'phones',
@@ -25,6 +27,7 @@ const data = {
 			descriptioin: 'hight quality HD camera',
 		},
 		{
+			_id: '3',
 			name: 'Smart phones',
 			slug: 'laptop',
 			catagory: 'laptop',
@@ -37,6 +40,7 @@ const data = {
 			descriptioin: 'hight quality HD camera',
 		},
 		{
+			_id: '4',
 			name: 'Smart phones',
 			slug: 'camera-smart',
 			catagory: 'phones',
