@@ -6,7 +6,7 @@ const data = {
 			catagory: 'phones',
 			image: '/Assets/smartPhone.png',
 			price: '5000SEK',
-			countInStock: 10,
+			countInStock: 0,
 			brand: 'Samsung',
 			rating: 4.5,
 			numReviews: 10,

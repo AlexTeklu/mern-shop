@@ -10,25 +10,24 @@ function App() {
 		<BrowserRouter>
 			<div className='d-flex flex-column site-container'>
 				<header>
-					<Navbar bg='dark' variant='dark'>
+					<Navbar bg='dark' variant='dark' expand='lg'>
 						<Container>
 							<LinkContainer to='/'>
-								<Navbar.Brand>Electro</Navbar.Brand>
+								<Navbar.Brand>Electronics</Navbar.Brand>
 							</LinkContainer>
 						</Container>
 					</Navbar>
 				</header>
 				<main>
-					<Container>
+					<Container className='mt-3'>
 						<Routes>
-							<Route path='/product/:slug' element={<ProductScreen />}></Route>
-							<Route path='/' element={<HomeScreen />}></Route>
+							<Route path='/product/:slug' element={<ProductScreen />} />
+
+							<Route path='/' element={<HomeScreen />} />
 						</Routes>
 					</Container>
 				</main>
-				<footer>
-					<div className='text-center'>All rights reserved</div>
-				</footer>
+				<footer className='text-center'>All rights reserved</footer>
 			</div>
 		</BrowserRouter>
 	);

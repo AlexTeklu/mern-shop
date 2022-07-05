@@ -32,10 +32,10 @@ main {
 }
 .btn-primary {
 	background-color: #ffc000;
-	color: black;
+	color: #000000;
 }
 .product {
-	border: 1px solid black;
+	border: 1px solid #0000;
 	margin: 1rem;
 }
 
@@ -43,11 +43,11 @@ main {
 	width: 100%;
 	max-width: 400px;
 }
-
+/* 
 .product-info {
 	padding: 1rem;
-}
- 
+} */
+
 .rating span {
 	color: #ffc000;
 }
