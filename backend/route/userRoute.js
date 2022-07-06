@@ -26,24 +26,24 @@ userRouter.post(
 	})
 );
 
-// userRouter.post(
-// 	'/signup',
-// 	expressAsyncHandler(async (req, res) => {
-// 		const newUser = await new User({
-// 			name: req.body.name,
-// 			email: req.body.email,
-// 			password: bycrpt.hashSync(req.body.password),
-// 		});
-// 		const user = await newUser.save();
-// 		res.send({
-// 			_id: user._id,
-// 			email: user.email,
-// 			email: user.email,
-// 			isAdmin: user.isAdmin,
-// 			token: generateToken(user),
-// 		});
-// 	})
-// );
+userRouter.post(
+	'/signup',
+	expressAsyncHandler(async (req, res) => {
+		const newUser = await new User({
+			name: req.body.name,
+			email: req.body.email,
+			password: bycrpt.hashSync(req.body.password),
+		});
+		const user = await newUser.save();
+		res.send({
+			_id: user._id,
+			email: user.email,
+			email: user.email,
+			isAdmin: user.isAdmin,
+			token: generateToken(user),
+		});
+	})
+);
 
 // userRouter.put(
 // 	'/profile',
