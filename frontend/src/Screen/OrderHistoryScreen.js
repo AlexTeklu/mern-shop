@@ -4,7 +4,7 @@ import MessageBox from '../components/MessageBox';
 import LoadingBox from '../components/LoadingBox';
 import { Store } from '../Store';
 import { useNavigate } from 'react-router-dom';
-import Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/esm/Button';
 import axios from 'axios';
 import { getError } from '../utils';
 
